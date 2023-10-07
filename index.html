@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="gb2312">
+<title>Game Cờ Tướng</title>
+<link href="css/chess.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="box" id="box">
+	<div class="chess_left">
+		<canvas id="chess">Bùi Ngọc Tiến</canvas>
+		<audio src="audio/click.wav" id="clickAudio" preload="auto"></audio>
+		<audio src="audio/select.wav" id="selectAudio" preload="auto"></audio>
+		<div>
+			<div class="bn_box" id="bnBox">
+				<input type="button" name="offensivePlay" id="tyroPlay" value="Dễ" />
+				<input type="button" name="offensivePlay" id="superPlay" value="Trung bình" />
+				<input type="button" name="stypeBn" id="stypeBn" value="Khó" />
+				<input type="button" name="regret" id="regretBn" value="Reset" />
+				<input type="button" name="billBn" id="billBn" value="" class="bn_box" />
+			</div>
+		</div>
+	</div>
+	<div class="chess_right" id="chessRight">
+		<select name="billList" id="billList">
+		</select>
+		<ol id="billBox" class="bill_box">
+		</ol>
+	</div>
+	<div id="moveInfo" class="move_info"> </div>
+</div>
+<script type="text/javascript" src="js/common.js"></script> 
+<script type="text/javascript" src="js/play.js"></script> 
+<script type="text/javascript" src="js/AI.js"></script> 
+<script type="text/javascript" src="js/bill.js"></script> 
+<script type="text/javascript" src="js/gambit.js"></script>
+
+</body>
+</html>
